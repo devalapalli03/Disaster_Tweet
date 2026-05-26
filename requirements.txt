@@ -1,0 +1,41 @@
+# ============================================================
+# Disaster Tweets Classification — Python Dependencies
+# ============================================================
+# Recommended: Python 3.9+
+# For Transformer fine-tuning, use a GPU runtime (Google Colab T4/A100 or CUDA machine)
+
+# ── Core Data & Viz ──────────────────────────────────────────
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.6
+seaborn>=0.12
+
+# ── NLP / Text Preprocessing ─────────────────────────────────
+nltk>=3.8
+contractions>=0.1.73
+emoji>=2.2
+textblob>=0.17
+wordcloud>=1.9
+
+# ── Classical ML ─────────────────────────────────────────────
+scikit-learn>=1.2
+joblib>=1.2
+
+# ── Deep Learning — TensorFlow (for RNN, BiLSTM, DistilBERT) ─
+tensorflow>=2.12
+
+# ── Deep Learning — PyTorch (for BERTweet) ───────────────────
+torch>=2.0
+# Install with CUDA if using GPU:
+# pip install torch --index-url https://download.pytorch.org/whl/cu118
+
+# ── HuggingFace Ecosystem ─────────────────────────────────────
+transformers>=4.35
+datasets>=2.14
+accelerate>=0.24
+evaluate>=0.4
+
+# ── Notebook Utilities ───────────────────────────────────────
+ipykernel>=6.0
+ipywidgets>=8.0
+tqdm>=4.65

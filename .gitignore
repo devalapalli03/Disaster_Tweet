@@ -1,0 +1,51 @@
+# ============================================================
+# .gitignore — Disaster Tweets Classification
+# ============================================================
+
+# ── Dataset (download from Kaggle separately) ────────────────
+*.csv
+*.zip
+dataset/
+/content/
+
+# ── Trained Model Artifacts ──────────────────────────────────
+*.h5
+*.pkl
+*.pt
+*.bin
+bt_results/
+distilbert_finetuned/
+__pycache__/
+*.pyc
+
+# ── Notebook Checkpoints ─────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Python Virtual Environments ──────────────────────────────
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── OS / Editor Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs & Outputs ───────────────────────────────────────────
+*.log
+wandb/
+runs/
+outputs/
+*.png
+native_f1.png
+common_f1.png
+
+# ── Submission (regenerate from notebook) ────────────────────
+submission_bertweet.csv
